@@ -1,0 +1,9 @@
+---
+- hosts: vault
+  become_user: root
+  gather_facts: true
+  serial: 1
+  become: true
+  remote_user: ubuntu
+  roles:
+    - /home/ubuntu/vault
