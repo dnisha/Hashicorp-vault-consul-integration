@@ -1,3 +1,8 @@
+- name: "Update all packages of to their latest version"
+  apt:
+    update_cache: yes
+  when: ansible_os_family == "Debian"
+
 - name: Creating vault user group
   ansible.builtin.group:
     name: "{{ vault_group }}"
