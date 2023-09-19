@@ -5,4 +5,4 @@
   become: true
   remote_user: ubuntu
   roles:
-    - /home/ubuntu/consule
+    - /home/ubuntu/Hashicorp-vault-consul-integration/consule
