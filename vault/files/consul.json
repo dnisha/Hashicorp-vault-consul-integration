@@ -5,7 +5,7 @@
   "data_dir": "/opt/consul",
   "bind_addr": "0.0.0.0",
   "client_addr": "0.0.0.0",
-  "advertise_addr": "consul_agent_ip", 
+  "advertise_addr": "{{ GetInterfaceIP \"eth0\"}}",
   "retry_join": ["50.1.4.4"],
   "log_level": "DEBUG",
   "enable_syslog": true,

@@ -16,3 +16,5 @@ Initial Root Token: hvs.OuUmOmNqTpgvJTcQKP4C8nqr
 
 rm -rf /opt/vault/data/*
 
+https://blogs.halodoc.io/vault-auto-unseal-via-aws-kms/
+
