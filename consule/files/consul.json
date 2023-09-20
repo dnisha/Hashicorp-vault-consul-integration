@@ -1,12 +1,11 @@
 {
   "server": true,
-  "node_name": "consul_s1",
   "datacenter": "dc1",
   "data_dir": "/opt/consul",
   "bind_addr": "0.0.0.0",
   "client_addr": "0.0.0.0",
   "advertise_addr": "{{ GetInterfaceIP \"eth0\"}}",
-  "bootstrap_expect": 1,
+  "bootstrap_expect": 2,
   "retry_join" : ["provider=aws tag_key=Tool tag_value=consul"],
   "ui": true,
   "log_level": "DEBUG",
